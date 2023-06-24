@@ -59,3 +59,31 @@ DB_PASSWORD=<your-database-password>
 DB_DATABASE=<your-database-name>
 ACCESS_TOKEN_SECRET=<your-access-token-secret>
 REFRESH_TOKEN_SECRET=<your-refresh-token-secret>
+
+API Endpoints
+
+The application exposes the following API endpoints:
+
+    POST /login: Authenticate user and generate access and refresh tokens.
+    POST /refresh-token: Refresh access token using a valid refresh token.
+    GET /messages: Retrieve paginated chat messages.
+
+Configuration
+
+The application uses the following environment variables:
+
+    DATABASE_URL: The connection URL for the PostgreSQL database.
+    JWT_SECRET: Secret key used for JWT token generation and verification.
+
+Make sure to set these environment variables before running the application.
+Contributing
+
+Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
+License
+
+This project is licensed under the MIT License.
+
+vbnet
+
+
+Feel free to modify and customize the README.md file according to your project's specific details and requirements.
